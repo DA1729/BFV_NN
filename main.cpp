@@ -270,20 +270,20 @@ int main(void){
 
     for (size_t i = 0; i < output_size; i++){
         bool correct = (dec_output[i] == expected_output[i]);
-        std::cout << "* Output " << i << ": Encrypted=" << dec_output[i] 
-                  << ", Expected=" << expected_output[i] 
+        std::cout << "* output " << i << ": encrypted=" << dec_output[i] 
+                  << ", expected=" << expected_output[i] 
                   << " -> " << (correct ? "CORRECT" : "INCORRECT") << std::endl;
         if (!correct) all_correct = false;  
     }
     std::cout << std::endl;
     if (all_correct) {
-        std::cout << "SUCCESS: Encrypted neural network computation matches expected results!" << std::endl;
+        std::cout << "SUCCESS: encrypted neural network computation matches expected results!" << std::endl;
     } else {
-        std::cout << "ERROR: Encrypted neural network computation has errors." << std::endl;
+        std::cout << "ERROR: encrypted neural network computation has errors." << std::endl;
     }
     
     std::cout << std::endl;
-    std::cout << "=== Demo Complete ===" << std::endl;
+    std::cout << "=== demo complete ===" << std::endl;
 
     return 0;
 
